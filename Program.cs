@@ -29,7 +29,7 @@ namespace Challenge3_3
                 {
                     if ((nums[i] + nums[j]) == target)
                     {
-                        indices = $"Index: {nums[i]} and Index: {nums[j]}";
+                        indices = $"Index: {i} and Index: {j}";
                         break;
                     }
                 }
