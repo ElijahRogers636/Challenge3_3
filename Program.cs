@@ -40,7 +40,7 @@ namespace Challenge3_3
 
         static void PrintArray(int[] nums)
         {
-            Console.Write("| ");
+            Console.Write("|");
             foreach (int i in nums)
             {
                 Console.Write($" {i} |");
