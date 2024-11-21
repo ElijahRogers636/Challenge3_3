@@ -9,7 +9,7 @@ namespace Challenge3_3
         static void Main(string[] args)
         {
             int[] nums = { 3, 1, 2, 6, 5, 8, 10, 13 };
-            int target = 7;
+            int target = 23;
             string solutionIndices;
 
             solutionIndices = SumTarget(nums, target);
@@ -22,10 +22,10 @@ namespace Challenge3_3
         // Checks if if two ints add up to target. Made sure to have j match i as to not check already checked sums. Breaks loop when/if found.
         static string SumTarget(int[] nums, int target)
         {
-            string indices = "Fail";
+            string indices = "No Combos Found";
             for (int i = 0; i < nums.Length-1; i++) 
             { 
-                for (int j = i+1; j < nums.Length-1; j++)
+                for (int j = i+1; j < nums.Length; j++)
                 {
                     if ((nums[i] + nums[j]) == target)
                     {
